@@ -34,7 +34,7 @@ docker-compose up -d && \
 docker-compose exec -d dockovpn wget -O /opt/Dockovpn/client.ovpn localhost:8080
 ```
 
-You can find a example docker compose file [here]((https://github.com/smn-kr/dockovpn/blob/master/docker-compose.yml). 
+You can find a example docker compose file [here](https://github.com/smn-kr/dockovpn/blob/master/docker-compose.yml). 
 
 After run this command you can find your `client.ovpn` inside `openvpn_conf` folder.
 
