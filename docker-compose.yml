@@ -3,14 +3,15 @@
 
 version: '3'
 services:
-  dockovpn:
-    image: alekslitvinenk/openvpn
+  openvpn:
+    container_name: openvpn
+    build:
+      context: https://github.com/smn-kr/dockovpn.git
     cap_add:
         - NET_ADMIN
-    ports:
-        - 1194:1194/udp # Expose tcp if you defined HOST_TUN_PROTOCOL=tcp
     environment:
-        HOST_ADDR: ${HOST_ADDR} 
+        HOST_ADDR: ${HOST_ADDR}
+        HOST_TUN_PROTOCOL: ${HOST_TUN_PROTOCOL}
     volumes:
-        - ./openvpn_conf:/opt/Dockovpn_data
+        - ./data/openvpn:/opt/Dockovpn_data
     restart: always
