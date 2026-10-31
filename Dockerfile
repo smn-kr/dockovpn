@@ -1,7 +1,5 @@
 FROM alpine:latest
 
-LABEL maintainer="Alexander Litvinenko <array.shift@yahoo.com>"
-
 # System settings. User normally shouldn't change these parameters
 ENV APP_NAME Dockovpn
 ENV APP_INSTALL_PATH /opt/${APP_NAME}
