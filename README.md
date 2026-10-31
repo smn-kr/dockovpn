@@ -15,6 +15,7 @@ This project contains some quickfixes to enable the user to update the dependenc
 For example the alpine version of this project is now pinned to latest tag instead of a specific version tag.
 
 This project unfortunatly this repo won´t be maintained as well, but it should be at least possible to update the container image.
+Before considering this project you should probably check for other similar active projects and check if other VPN Solutions like Wireguard may be better suited for your needs.
 
 ## Prerequisites
 
@@ -48,7 +49,7 @@ docker-compose up -d
 ## Other resources
 
 [Privacy Policy](https://github.com/smn-kr/docker-openvpn/blob/master/PRIVACY_POLICY.md) \
-[Contrubition Guidelines](https://github.com/smn-kr/docker-openvpn/blob/master/CONTRIBUTING.md) \
+[Contribution Guidelines](https://github.com/smn-kr/docker-openvpn/blob/master/CONTRIBUTING.md) \
 [Code Of Conduct](https://github.com/smn-kr/docker-openvpn/blob/master/CODE_OF_CONDUCT.md) \
 [Release Guideline](https://github.com/smn-kr/docker-openvpn/blob/master/docs/RELEASE_GUIDELINE.md) \
 [License Agreement](https://github.com/smn-kr/docker-openvpn/blob/master/LICENSE)
